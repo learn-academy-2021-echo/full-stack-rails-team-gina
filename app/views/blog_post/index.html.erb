@@ -1,0 +1,13 @@
+<h1> Welcome to Our Blog </h1>
+
+<ul>
+    <% @blog_post.each do |title| %>
+
+        <li>
+            <%=link_to title.title, blog_post_path(title) %>
+        </li>
+    <% end %>
+
+</ul>
+
+
